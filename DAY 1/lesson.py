@@ -92,4 +92,7 @@ left(90)
 right(180)
 forward(20)
 end_fill()
-#end of drawing windows
+#end of drawing window
+
+
+exitonclick()
