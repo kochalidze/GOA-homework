@@ -25,13 +25,13 @@ age = 13
 print(str(name))
 print(int(age))
 
-
+#The fifth task
 num1 = (str("please enter firsr numbe"))
 num2 = (str("please enter second number"))
 
 print(5 + 5)
 
+#The fifth task 
 num1 = 15
-
 print(num1 + 10)
 
