@@ -416,58 +416,6 @@ forward(60)
 right(90)
 forward(100)
 
-#G
-width(2.5)
-color("green")
-right(90)
-forward(20)
-right(90)
-forward(5)
-right(90)
-forward(10)
-right(90)
-forward(10)
-right(90)
-forward(20)
-right(90)
-forward(30)
-right(90)
-forward(20)
-
-#O
-penup()
-forward(10)
-pendown()
-forward(10)
-right(40)
-forward(5)
-right(48)
-forward(25)
-right(50)
-forward(5)
-right(40)
-forward(10)
-right(50)
-forward(5)
-right(40)
-forward(25)
-right(40)
-forward(5)
-
-#A
-penup()
-goto( 125,   265)
-pendown()
-left(20)
-forward(35)
-right(140)
-forward(35)
-right(180)
-forward(10)
-left(70)
-forward(20)
-
-
 
 
 
