@@ -1,12 +1,14 @@
-from turtle import *
+from turtle import  *
 
-width(3)
-speed(20)
-#we went to paint a home
 
-color("brown")
-begin_fill()
+shape("turtle")
+speed(2)
+width(5)
+#we went tu paint a home
+color("green")
+
 forward(100)
+begin_fill()
 left(90)
 
 forward(100)
@@ -18,75 +20,79 @@ left(90)
 forward(100)
 left(90)
 end_fill()
-#end  of squere
-
-#drawing door
+#end
 
 
-forward(35)
-color("orange")
+
+#drawing dor
+
+forward(40)
+color("brown")
 begin_fill()
 left(90)
-forward(50)
+forward(45)
 right(90)
 forward(30)
 right(90)
-forward(50)
+forward(45)
 end_fill()
-#end drawing a door
+#end of drawing door
 
+#drawing roof
 
 penup()
 goto(100,  100)
 pendown()
-color("green")
+color("red")
 begin_fill()
 right(150)
 forward(100)
 left(120)
 forward(100)
 end_fill()
-
-
+#end of drawing roof
 
 #drawing window
 
 penup()
-goto(40,  70)
-pendown()
+goto(40, 70)
 color("purple")
 begin_fill()
-right(60)
-forward(25)
-right(90)
-forward(25)
-right(90)
-forward(25)
-right(90)
-forward(25)
-
-penup()
-goto(90,  70)
+left(90)
+right(150)
 pendown()
-right(90)
-forward(25)
-right(90)
-forward(25)
-right(90)
-forward(25)
-right(90)
-forward(25)
+forward(20)
+left(90)
+right(180)
+forward(20)
+left(90)
+right(180)
+forward(20)
+left(90)
+right(180)
+forward(20)
 end_fill()
 
 
-
-
-
-
-
-
-
-
+penup()
+goto(90,  70)
+color("purple")
+begin_fill()
+left(90)
+right(180)
+pendown()
+forward(20)
+left(90)
+right(180)
+forward(20)
+left(90)
+right(180)
+forward(20)
+left(90)
+right(180)
+forward(20)
+end_fill()
+#end of drawing window
 
 
 exitonclick()
