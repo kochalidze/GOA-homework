@@ -57,32 +57,51 @@ print(57 != 35)
 print(55 != 55)
 print(22 != 22)
 
+
+
 #10-10 მაგალითი and და or ოპერატორებზე
 
 #პირველი ოპერაცია (and)
-#True
-print(True and True)
-print(False and False)
-print(6>3 and False)
-print(5<3 and True)
-print(True and False)
-print(True and False)
-print(True and False)
-print(True and False)
-print(True and False)
-print(True and False)
+print(7>4 and 1>0)
+#true and true = true
+print(4<5 and 0<2)
+#true and true = true
+print(4<3 and 9<8)
+#false and false = false
+print(6>7 and 8==7)
+#false and false = false
+print(7<8 and 6!=6)
+#false and false = false
+print(4==4 and 5!=5)
+#true and false = false
+print(6>3 and 6<4)
+#true and false = false
+print(5<3 and 5>4)
+#false and true = false
+print(5<=4 and 6<=6)
+#false and true = false
+print(4<=3 and 2>=1)
+#false and true = false
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#მეორე ოპერაცია (or)
+print(8>7 or 1>0)
+##true or true = true
+print(9==9 or 8!=6)
+#true or true = true
+print(6<5 and 5==6)
+#false or false = false
+print(4<=3 and 8!=8)
+#false or false = false
+print(6>7 and 6!=6)
+#false or false = false
+print(5!=4 and 3==2)
+#true or false = true
+print(4>=3 and 6<=4)
+#true or false = true
+print(5<3 and 9<10)
+#false or true = true
+print(4!=4 and 9<=10)
+#false or true = true
+print(0>=1 and 9<15)
+#false or true = true
