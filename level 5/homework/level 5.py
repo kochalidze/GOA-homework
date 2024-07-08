@@ -2,6 +2,7 @@ from turtle import *
 
 speed(100)
 width(2)
+
 #drawing a rectang
 right(90)
 forward(200)
@@ -395,6 +396,18 @@ right(180)
 forward(10)
 left(70)
 forward(20)
+
+
+penup()
+goto(0, 0)
+right(180)
+forward(130)
+pendown()
+forward(400)
+
+
+
+
 
 
 exitonclick()
