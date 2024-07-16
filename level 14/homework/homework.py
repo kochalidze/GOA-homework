@@ -1,43 +1,43 @@
 #გავაკეთოთ 5 მაგალითი while ციკლზე
 
 #მაგ: 1
-#num = 0
+num = 0
 
-#while num != 9:
-   # print("Giga")
-    #num = num + 1
+while num != 9:
+   print("Giga")
+   num = num + 1
 
 #მაგ: 2
-#num1 = 1
-#while num1 < 6:
-  #print(num1)
-  #num1 = num1 + 1
+num1 = 1
+while num1 < 6:
+  print(num1)
+  num1 = num1 + 1
 
 #მაგ: 3
-#num2 = 0
-#while num2 <= 11:
-  #  num2 = int(input("please enter your number: "))
-    #if num2 == 11:
-    #    print("you won")
-    #else: 
-       # print("You lost")
+num2 = 0
+while num2 <= 11:
+   num2 = int(input("please enter your number: "))
+   if num2 == 11:
+       print("you won")
+   else: 
+       print("You lost")
 
 #მაგ: 4
 
-#i = 1
-#while i < 6:
- # print(i)
- # if i == 6:
-  #  break
- # i = i + 1
+i = 1
+while i < 6:
+ print(i)
+ if i == 6:
+   break
+ i = i + 1
 
 #მაგ: 5
-#i = 0
-#while i < 6:
-  #i += 1
-  #if i == 3:
-   # continue
-  #print(i)
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+   continue
+  print(i)
 
 #გავაკეთოთ 5 მაგალითი for ციკლებზე
 #მაგ: 1
