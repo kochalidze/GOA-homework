@@ -1,0 +1,59 @@
+.div1 p {
+    text-decoration: solid;
+    color: #3700ff;
+    font-weight: 50%;
+}
+
+.div2 p {
+    text-decoration: overline;
+    color: #751b1b;
+    font-weight: 40%;
+}
+
+.div3 p {
+    text-decoration: double;
+    color: #610529;
+    font-weight: 30%;
+}
+
+.div4 p {
+    text-decoration: dotted;
+    color: #00f6ea;
+    font-weight: 20%;
+}
+
+.div5 p {
+    text-decoration: line-through;
+    color: #3700ff;
+    font-weight: 40%;
+}
+
+.div6 p {
+    text-decoration: wavy;
+    color: #00ff00;
+    font-weight: 38%;
+}
+
+.div7 p {
+    text-decoration: underline;
+    color: #8a00fa;
+    font-weight: 60%;
+}
+
+.div8 p {
+    text-decoration: currentColor;
+    color: #ffea00;
+    font-weight: 70%;
+}
+
+.div9 p {
+    text-decoration: none;
+    color: #070022;
+    font-weight: 65%;
+}
+
+.div10 p {
+    text-decoration: inherit;
+    color: #00ff8c;
+    font-weight: 55%;
+}

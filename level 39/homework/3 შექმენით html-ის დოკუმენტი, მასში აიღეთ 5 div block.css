@@ -1,0 +1,19 @@
+.div1 p {
+    text-align: right;
+    font-size: 100%;
+    color: #000;
+    background-color: #00ffaa;
+}
+
+.div2 p {
+    text-align: center;
+    font-size: 50%;
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.div3 p {
+    font-size: 75%;
+    color: #dd00ff;
+    background-color: #3a0c11;
+}

@@ -1,0 +1,12 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('441892091_1189369185528339_4733783885803139698_n.jpg')  no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you</title>
+    <link rel="stylesheet" href="classwork.css" >
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">ჩემს შესაბებ</button>
+        <div class="popup" id="popup">
+            <img src="images.png">
+            
+            <p>მე მქვია გიგა ვარ 13 წლის და ვსწავლობ გოაში </p>
+            <button type="button" onclick="closePopup()">კარგი</button>
+        </div>
+    </div>\
+<script>
+let popup = document.getElementById("popup")
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
+</body>
+</html>
