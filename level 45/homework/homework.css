@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #259b93;
+}
+
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    width: 250px;
+    height: 250px;
+    background: url('images.jpg') no-repeat;
+    border: 2px solid #383737;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px#031110;
+}
+
+.div1:hover {
+    width: 265px;
+    height: 265px;
+}
+
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    width: 250px;
+    height: 250px;
+    background: url('download.jpg') no-repeat;
+    border: 2px solid #383737;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px#031110;
+}
+
+.div2:hover {
+    width: 265px;
+    height: 265px;
+}
+
+.div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    width: 250px;
+    height: 250px;
+    background: url('download\ 1.jpg') no-repeat;
+    border: 2px solid #383737;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px#031110;
+}
+
+.div3:hover {
+    width: 265px;
+    height: 265px;
+}
+
+.div-div123 {
+    color: #fff;
+}
+
+.div-div123 button {
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+.div-div123 button:hover {
+    background-color: #95a09d;
+}

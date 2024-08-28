@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border: 2px solid #4e4949;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #4e4949;
+    background: url('South\ korea.jpg') no-repeat;
+}
+
+.div1:hover {
+    width: 260px;
+    height: 205px;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border: 2px solid #4e4949;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #4e4949;
+    background: url("Tbilisi.jpg");
+}
+
+.div2:hover {
+    width: 260px;
+    height: 205px;
+}
+
+.div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border: 2px solid #4e4949;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #4e4949;
+    background: url("New\ York.jpg");
+}
+
+.div3:hover {
+    width: 260px;
+    height: 205px;
+}
+
+.div4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border: 2px solid #4e4949;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #4e4949;
+    background: url("Paris.jpg");
+}
+
+.div4:hover {
+    width: 260px;
+    height: 205px;
+}
+
+.div5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border: 2px solid #4e4949;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #4e4949;
+    background: url("Tokyo.jpg");
+}
+
+.div5:hover {
+    width: 260px;
+    height: 205px;
+}
+
+.div6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border: 2px solid #4e4949;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #4e4949;
+    background: url("Dubai.jpg");
+}
+
+.div6:hover {
+    width: 260px;
+    height: 205px;
+}

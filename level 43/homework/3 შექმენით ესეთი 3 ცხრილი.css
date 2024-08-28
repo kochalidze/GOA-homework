@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+}
+body {
+    background-color: rgb(76, 23, 76);
+}
+
+table {
+    color: #fff;
+    font-weight: 400;
+    width: 500px;
+    height: 200px;
+}
+
+.table1 {
+    background-color: lightseagreen;
+    margin: 200px;
+}
+
+.table1 td:hover {
+    background-color: rgb(20, 106, 102);
+}
+
+.table1 th {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.table1 td {
+    text-align: left;
+    font-size: 15px;
+    
+}
+
+.table2 {
+    background-color: rgb(255, 1, 1);
+    margin: 200px;
+}
+
+.table2 td:hover {
+    background-color: rgb(115, 12, 12);
+}
+
+.table2 th {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.table2 td {
+    text-align: left;
+    font-size: 15px;
+    
+}
+
+.table3 {
+    background-color: rgb(85, 3, 92);
+    margin: 200px;
+}
+
+.table3 td:hover {
+    background-color: rgb(75, 18, 88);
+}
+
+.table3 th {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.table3 td {
+    text-align: left;
+    font-size: 15px;
+    
+}
