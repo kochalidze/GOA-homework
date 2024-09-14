@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-size: paragraph;
+    font-family: Outfit; 
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 570px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 13px;
+    
+}
+
+.div1 {
+    width: 300px;
+}
+
+#img1 {
+    position: relative;
+    top: -45px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.divPrice {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    top: 5px;
+    font-weight: 500;
+}
+
+
+.p2 {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.p2 p {
+    color: hsl(178, 100%, 50%);
+}
+
+.p3 {
+    display: flex;
+    flex-direction: row;
+    color: hsl(215, 32%, 27%);
+    gap: 7px;
+}
+
+h2 {
+
+    position: relative;
+    bottom: 25px;
+    color: #fff;
+    
+}
+
+#p1 {
+    font-weight: 400;
+    font-size: 17px;
+    position: relative;
+    bottom: 10px;
+    color: hsl(215, 32%, 27%);
+}
+
+hr {
+    color: #000;
+    position: relative;
+    top: 20px;
+}
+
+.divEnd {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#img2 {
+    width: 30px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+}
+
+#p3 {
+    color: hsl(215, 32%, 27%);
+    margin-top: 5px;
+}
+
+#span1 {
+    color: #fff
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

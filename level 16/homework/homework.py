@@ -28,19 +28,19 @@ print(len(cars))
 
 #2
 songs = ["გურული ბიჭები", "რა მოგელანდა", "აბიტურიენტს", " Gym songs"]
-print(len(songs))
+print(len[songs])
 
 #3
 Old_football_player = ["Maradona", "Pele", "carlos", "Ronaldinio", "Ronaldo", "ROMÁRIO", "Xavi"]
-print(len(Old_football_player))
+print(len[Old_football_player])
 
 #4
 countries = ["Poland", "Norway", "Czechia", "Georgia"]
-print(len(countries))
+print(len[countries])
 
 #5
 Football_player = ["Kvaracxelia", "Messi", "Ronaldo", "Mbape", "Neimar jr", "Vinicius jr"]
-print(len(Football_player))
+print(len[Football_player])
 
 
 
@@ -117,7 +117,7 @@ print(Old_football_player[6])
 songs = ["გურული ბიჭები", "რა მოგელანდა", "აბიტურიენტს", " Gym songs"]
 print(songs[3])
 
-#5
+5
 countries = ["Poland", "Norway", "Czechia", "Georgia"]
 print(countries[3])
 

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1a1a;
+    height: 100px;
+    
+}
+
+h1 {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: overline;
+}
+ 
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+}
+
+section {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    border: 2px solid #000;
+}
