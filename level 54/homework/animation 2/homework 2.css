@@ -1,0 +1,41 @@
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  .loader{
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border:8px solid #fff;
+    border-radius: 50%;
+    animation: pulse 3s ease-in-out infinite;
+    border-color: red;
+    
+  }
+  
+  p {
+    color: red;
+    animation: paragrap 5s infinite;
+  }
+  
+  @keyframes paragrap{
+    from {
+      font-size: 0;
+    }
+    
+    to {
+      font-size: 50px;
+    }
+  
+  }
+  
+  @keyframes pulse{
+    0%,100%{transform: scale(2);}
+    50%{transform: scale(1.2);}
+  }

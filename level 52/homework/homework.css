@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 100px;
+    flex-direction: column;
+}
+
+div {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}
+
+.div1:hover {
+    transform: rotate(50deg);
+}
+
+.div2:hover {
+    transform: skew(50deg, 5deg);
+}
+
+.div3:active {
+    transform: rotate(50deg);
+    transform-origin: top right;
+}
+
+.div4:active {
+    transform: scale(5);
+}
+
+.div5:active {
+    transform: rotate(40deg);
+    transform-origin: bottom right;
+    
+}

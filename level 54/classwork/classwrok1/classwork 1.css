@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    color: red;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px red;
+
+    opacity: 0;
+    animation-name: paragrap;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes paragrap {
+    0% {
+        font-size: 60px;
+        text-shadow: 6px 6px 6px;
+    }
+
+    10% {
+        opacity: 0.1;
+        /* font-size: 70px; */
+        text-shadow: 7px 7px 7px;
+    }
+
+    20% {
+        opacity: 0.5;
+        /* font-size: 80px; */
+        text-shadow: 8px 8px 8px;
+    }
+
+    30% {
+        opacity: 0.10;
+        /* font-size: 90px; */
+        text-shadow: 9px 9px 9px;
+    }
+
+    40% {
+        opacity: 0.15;
+        /* font-size: 100px; */
+        text-shadow: 10px 10px 10px;
+    }
+
+    50% {
+        opacity: 0.20;
+        font-size: 110px;
+        text-shadow: 11px 11px 11px;
+    }
+}

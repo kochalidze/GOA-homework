@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+main {
+    width: 700px;
+    height: 700px;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+
+    gap: 30px;
+}
+
+section {
+    background-color: purple;
+    border: 1px solid #00ffff;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px #00ffff;
+}

@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+div {
+    background-color: red;
+
+    animation-name: div1;
+    animation-duration: 2s;
+}

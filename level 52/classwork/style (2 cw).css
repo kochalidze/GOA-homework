@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parent {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+
+.parent:active {
+    transform: translate(50deg, 50deg);
+    transform: scale(2deg);
+    transform: rotate(50deg);
+    transform-origin: top right;
+    transform: skew(20deg, 20deg);
+    
+}

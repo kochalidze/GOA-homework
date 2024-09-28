@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h1:hover {
+    animation-name: h1;
+    animation-duration: 10s;
+}
+
+
+@keyframes h1 {
+    0% {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        font-size: 100px;
+        color: #fff;
+        
+    }
+
+    100% {
+        transform: rotate(300deg);
+        opacity: -0.5;
+    }
+}

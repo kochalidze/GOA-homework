@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+div p {
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 5px 5px 5px #000;
+}
+
+div {
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 25px red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div:hover {
+    animation-name: animationdiv;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+    animation-direction: alternate;
+}
+
+@keyframes animationdiv {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(90deg)
+    }
+
+    100% {
+        transform: rotate(-90deg)
+    }
+}
+

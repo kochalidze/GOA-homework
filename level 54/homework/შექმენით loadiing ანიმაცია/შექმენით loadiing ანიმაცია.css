@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    height: 60px;
+    border: 2px solid  black;
+    display: flex;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+#div2 {
+    width: 650px;
+    background-color: green;
+    animation-name: loading;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#div2 p {
+    position: relative;
+    left: 50px;
+}
+
+@keyframes loading {
+    from {
+        width: 0px;
+        background-color: #fff;
+    }
+
+    to {
+        width: 650px;
+        background-color: green;
+    }
+}
