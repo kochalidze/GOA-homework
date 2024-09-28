@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Animation</title>
+    <style>
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: 100px auto;
+            /* პირველადი მდგომარეობა */
+            transform: rotate(0deg) scale(1) translate(0, 0) skew(0deg, 0deg);
+            /* ანიმაცია */
+            animation: animateBox 5s infinite ease-in-out;
+        }
+
+        @keyframes animateBox {
+            0% {
+                /* საწყისი მდგომარეობა */
+                transform: rotate(0deg) scale(1) translate(0, 0) skew(0deg, 0deg);
+            }
+            25% {
+                /* როტაცია 90 გრადუსით */
+                transform: rotate(90deg) scale(1.2) translate(50px, 0) skew(10deg, 0deg);
+            }
+            50% {
+                /* როტაცია 180 გრადუსით და მასშტაბირება */
+                transform: rotate(180deg) scale(1.5) translate(100px, 50px) skew(0deg, 10deg);
+            }
+            75% {
+                /* როტაცია 270 გრადუსით და სკვიუმენტი */
+                transform: rotate(270deg) scale(1.2) translate(50px, 100px) skew(-10deg, -10deg);
+            }
+            100% {
+                /* უკან დაბრუნება საწყის მდგომარეობაზე */
+                transform: rotate(360deg) scale(1) translate(0, 0) skew(0deg, 0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="animated-box"></div>
+
+
+
+    <!--  rotate() ფუნქცია:
+
+როტაცია გამოიყენება ელემენტის გარშემო ბრუნვისთვის. ეს ფუნქცია იღებს კუთხეს (გრადუსებში), რომელთა მიხედვითაც ელემენტი უნდა დატრიალდეს.
+
+მაგალითად:
+transform: rotate(45deg);
+ეს კოდი ელემენტს 45 გრადუსით დაატრიალებს.
+
+
+
+scale() ფუნქცია:
+
+მასშტაბირება საშუალებას გვაძლევს, ელემენტი გავადიდოთ ან დავაპატარავოთ. ფუნქცია იღებს ორ პარამეტრს: X და Y ღერძზე მასშტაბირების სიდიდეებს.
+
+მაგალითად:
+transform: scale(1.5, 1.5);
+ეს ელემენტს 1.5-ჯერ გაადიდებს ორივე ღერძზე.
+
+
+
+translate() ფუნქცია:
+
+ტრანსლაცია (გადანაცვლება) გამოიყენება ელემენტის პოზიციის შესაცვლელად X და Y ღერძზე.
+
+მაგალითად:
+transform: translate(100px, 50px);
+ეს ელემენტს X ღერძზე 100 პიქსელით და Y ღერძზე 50 პიქსელით გადაადგილებს.
+
+
+
+skew() ფუნქცია:
+
+სკვიუმენტი იწვევს ელემენტის დაღუნვას ან დახრას გეომეტრიულ კუთხეში. ის იღებს კუთხეებს (გრადუსებში) X და Y ღერძისთვის.
+
+მაგალითად:
+transform: skew(20deg, 10deg);
+ეს ელემენტს X ღერძზე 20 გრადუსით და Y ღერძზე 10 გრადუსით დაახრის. -->
+</body>
+</html>

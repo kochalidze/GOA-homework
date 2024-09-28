@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Animation</title>
+    <style>
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            margin: 100px auto;
+            /* პირველადი მდგომარეობა */
+            transform: translate(0, 0) rotate(0deg) scale(1) skew(0deg, 0deg);
+            /* Smooth animation effect */
+            transition: transform 2s ease-in-out;
+        }
+
+        .animated-box:hover {
+            /* ტრანსფორმაცია ჰოვერის დროს */
+            transform: translate(100px, 50px) rotate(180deg) scale(1.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="animated-box"></div>
+
+</body>
+</html>
