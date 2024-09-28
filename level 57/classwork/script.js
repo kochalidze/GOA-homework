@@ -104,17 +104,52 @@ console.log(typeof myNumber);
 
 
 //14) Create a boolean variable isRaining and set it to false. Write a condition that logs "Take an umbrella!" if isRaining is true.
+let isRaining = false;
+if (isRaining) {
+    console.log("Take an umbrella!");
+    } else  {
+        console.log("No need for an umbrella");
+        }
+
 
 //15) Declare a variable str and assign it a string value. Log the length of the string using .length.
+let str = "Hello, World!";
+console.log(str.length);
+
 
 //16) Create a string variable firstName and another lastName. Concatenate them into a single variable fullName and log the result.
+let firstName = "John";
+let lastName = "Doe";
+let fullName = firstName + " " + lastName;
+console.log(fullName);
 
 
 //17) Write a function that accepts two numbers, performs all arithmetic operations on them, and returns a summary object with the results (addition, subtraction, multiplication, etc.)
+function mathOperations(num1, num2) {
+    let summary = {
+        addition: num1 + num2,
+        subtraction: num1 - num2,
+        multiplication: num1 * num2,
+        division: num1 /  num2,
+        }
+        return summary;
+        }
 
 
 //18) Create three variables: num, isEven, and isGreaterThanTen. Set num to a number. Assign isEven a boolean based on whether the number is even, and assign isGreaterThanTen a boolean based on whether it is greater than 10.
+let num = 15;
+let isEven = num % 2 === 0;
+let isGreaterThanTen = num > 10;
+
 
 //19) Declare a let variable password and check if its length is at least 8 characters. Log "Password is strong" if the condition is met.
+let password = "password123";
+if (password.length >= 8) {
+    console.log("Password is strong");
+    } else {
+        console.log("Password is weak");
+        }
+        
 
-//20) Write a program that takes a string input (your name) and checks if it equals "John". If true, log "Hello, John!", else log "Hello, stranger!".  
+//20) Write a program that takes a string input (your name) and checks if it equals "John". If true, log "Hello, John!", else log "Hello, stranger!".
+let name = "John";
