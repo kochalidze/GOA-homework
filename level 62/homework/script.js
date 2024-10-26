@@ -78,6 +78,12 @@ concatenateStrings()
 
 // 8.Exponentiation
 // Write a function power() that prompts the user for a base number and an exponent, and returns the result of raising the base to the power of the exponent.
+function power() {
+    base = prompt('Enter base')
+    exponent = prompt('Enter exponent')
+    result = Math.pow(base,  exponent)
+    console.log(result)
+    }
 
 
 // 9.Calculate Circle Circumference
