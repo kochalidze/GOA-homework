@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტაიმერი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #timer {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ტაიმერის ჩვენება -->
+    <div id="timer">00:00:00</div>
+
+    <!-- ღილაკები -->
+    <div class="buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <script>
+        let seconds = 0;
+        let timerInterval = null;
+
+        // ტაიმერის დაწყება
+        function startTimer() {
+            if (timerInterval) return; // თუ ტაიმერი უკვე მუშაობს, ახალი ინტერვალი არ დაიწყო
+
+            timerInterval = setInterval(() => {
+                seconds++;
+                displayTime();
+            }, 1000);
+        }
+
+        // ტაიმერის პაუზა
+        function pauseTimer() {
+            clearInterval(timerInterval);
+            timerInterval = null; // ინტერვალის შეწყვეტა
+        }
+
+        // ტაიმერის გადატვირთვა
+        function resetTimer() {
+            pauseTimer();
+            seconds = 0;
+            displayTime(); // ნულზე დაბრუნება
+        }
+
+        // დროის ჩვენება
+        function displayTime() {
+            const hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+            const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+            const secs = String(seconds % 60).padStart(2, '0');
+            document.getElementById("timer").textContent = `${hrs}:${mins}:${secs}`;
+        }
+    </script>
+
+</body>
+</html>

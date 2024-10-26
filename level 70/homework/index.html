@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სტატიკური და დინამიური მასივები</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>სტატიკური და დინამიური მასივები</h1>
+        <p>შესწავლა და შედარება</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Intro Section -->
+        <section id="intro">
+            <h2>რა არის მასივი?</h2>
+            <p>მასივი არის მონაცემთა სტრუქტურა, რომელიც ინახავს ელემენტების ერთგვაროვან კოლექციას. მასივში თითოეულ ელემენტს აქვს ინდექსი, რომელიც იწყება 0-დან.</p>
+        </section>
+
+        <!-- Static Arrays Section -->
+        <section id="static-arrays">
+            <h2>სტატიკური მასივები</h2>
+            <p>სტატიკური მასივი არის მასივი, რომლის ზომა (ელემენტების რაოდენობა) წინასწარ განსაზღვრულია და არ შეიძლება შეიცვალოს. გამოიყენება, როდესაც წინასწარ ვიცით მასივის ზომა და არ გვჭირდება მისი დინამიურად შეცვლა.</p>
+            <h3>მაგალითი (C++-ში):</h3>
+            <pre><code>int array[5] = {1, 2, 3, 4, 5};</code></pre>
+            <p><strong>უპირატესობები:</strong> მარტივი და სწრაფი გამოყენება, ეფექტური მეხსიერების მართვა.</p>
+            <p><strong>ნაკლოვანებები:</strong> ფიქსირებული ზომა და შეზღუდული შესაძლებლობა ელემენტების დამატების ან წაშლისთვის.</p>
+        </section>
+
+        <!-- Dynamic Arrays Section -->
+        <section id="dynamic-arrays">
+            <h2>დინამიური მასივები</h2>
+            <p>დინამიური მასივი არის მასივი, რომლის ზომაც შეიძლება შეიცვალოს პროგრამის გაშვების დროს. გამოიყენება, როდესაც მონაცემთა რაოდენობა უცნობია ან დინამიურად იცვლება.</p>
+            <h3>მაგალითი (JavaScript-ში):</h3>
+            <pre><code>let dynamicArray = [];</code></pre>
+            <p><strong>უპირატესობები:</strong> ზომის ადაპტირება საჭიროების მიხედვით.</p>
+            <p><strong>ნაკლოვანებები:</strong> მეხსიერების გამოყოფა უფრო რთულია და რთული მენეჯმენტი.</p>
+        </section>
+
+        <!-- Comparison Section -->
+        <section id="comparison">
+            <h2>სტატიკური vs დინამიური მასივები</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>მახასიათებელი</th>
+                        <th>სტატიკური მასივი</th>
+                        <th>დინამიური მასივი</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ზომა</td>
+                        <td>ფიქსირებული</td>
+                        <td>ცვალებადი</td>
+                    </tr>
+                    <tr>
+                        <td>მეხსიერება</td>
+                        <td>განსაზღვრული წინასწარ</td>
+                        <td>პროგრამის დროს იცვლება</td>
+                    </tr>
+                    <tr>
+                        <td>სიჩქარე</td>
+                        <td>შედარებით მაღალი</td>
+                        <td>შედარებით დაბალი</td>
+                    </tr>
+                    <tr>
+                        <td>გამოყენება</td>
+                        <td>როდესაც ზომა ცნობილია</td>
+                        <td>როდესაც ზომა იცვლება</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples">
+            <h2>მაგალითები</h2>
+            <p><strong>სტატიკური მასივი:</strong></p>
+            <pre><code>const staticArray = [10, 20, 30, 40, 50];</code></pre>
+            <p><strong>დინამიური მასივი:</strong></p>
+            <pre><code>let dynamicArray = [];
+dynamicArray.push(60);
+dynamicArray.push(70);</code></pre>
+        </section>
+    </main>
+
+</body>
+</html>
+

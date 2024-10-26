@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პარაგრაფის ტექსტის ცვლილება</title>
+</head>
+<body>
+    <!-- პარაგრაფი -->
+    <p id="changing-text">ეს ტექსტი შეიცვლება ყოველ 5 წამში.</p>
+
+    <script>
+        // ტექსტების მასივი
+        const texts = [
+            "ეს არის ტექსტი #1",
+            "ეს არის ტექსტი #2",
+            "ეს არის ტექსტი #3",
+            "ეს არის ტექსტი #4",
+            "ეს არის ტექსტი #5"
+        ];
+
+        let currentIndex = 0;
+
+        function changeParagraphText() {
+            // ტექსტის ცვლილება
+            document.getElementById("changing-text").textContent = texts[currentIndex];
+            
+            // მომდევნო ტექსტის ინდექსი
+            currentIndex = (currentIndex + 1) % texts.length;
+        }
+
+        // ყოველ 5 წამში გამოიძახებს changeParagraphText ფუნქციას
+        setInterval(changeParagraphText, 5000);
+    </script>
+</body>
+</html>
