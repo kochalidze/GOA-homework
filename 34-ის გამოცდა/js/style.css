@@ -4,15 +4,17 @@ body {
     align-items: center;
     height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #f3ffd1dd;
 }
 .container {
-    background-color: #ffffff;
+    background-color: #9a9a9a;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    width: 500px;
+    height: 500px;
     text-align: center;
+    box-shadow: 5px 5px 5px rgb(136, 134, 134);
 }
 h2 {
     color: #333;
@@ -26,17 +28,17 @@ input[type="number"] {
     font-size: 16px;
 }
 button {
-    background-color: #4caf50;
+    background-color: #247427;
     color: white;
     border: none;
     padding: 10px;
-    width: 100%;
+    width: 500px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #45a049;
+    background-color: #122f13;
 }
 .result {
     margin-top: 15px;
