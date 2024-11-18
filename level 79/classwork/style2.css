@@ -1,0 +1,37 @@
+/* 3) შევქმნათ 3 ღილაკი, თითოეულ ღილაკზე ჰოვერის დროს, უნდა გამოვიდეს დივი ნომერით 1, ნომერი 2 და ნომერი 3 შესაბამისად. ( ეს დივები უნდა გაჩნდეს ნელა ) */
+.button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* ჰოვერის კონტენტისთვის საწყისი მდგომარეობა */
+  .hover-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* ჰოვერის ეფექტი */
+  .button:hover ~ .hover-content {
+    display: none;
+  }
+  
+  /* შესაბამისი დივის გამოჩენა ჰოვერის დროს */
+  .button[data-hover="1"]:hover ~ #hover-1,
+  .button[data-hover="2"]:hover ~ #hover-2,
+  .button[data-hover="3"]:hover ~ #hover-3 {
+    display: block;
+    opacity: 1;
+  }
+  

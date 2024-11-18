@@ -1,0 +1,21 @@
+/* 1) ღილაკზე დაკლიკების დროს, ღილაკმა ფერი შეიცვალოს და ზემოთ ოდნავ აიწიოს, (ეს ყველაფერი უნდა მოხდეს გადასვლით) */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+button {
+    background-color: #0099ff; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+button:active {
+    background-color: #1f394b;
+    transform: translateY(-5px); 
+  }

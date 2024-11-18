@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 1) შექმენით ფორმა და ცხრილი, ფორმაში იქონიეთ 4 შესატანი ველი, მომხმარებლმა უნდა შემოიტანოს სახელი, იმეილი, პაროლი და ფბ ლინკი, როდესაც ფორმა დადასტურდება როგორც იცით გვერდი ავტომატურად დარეფრეშდება, გათიშეთ ეს ქმედება preventDefault() მეთოდის დახმარებით, დადასტურების შემდეგ წამოიღეთ შემოტანილი მნიშვნელობები ინფუთებიდან name ატრიბუტის დახმარებით, ყოველ დადასტურებაზე ცხრილში შექმენით ახალი რიგი და დაამატეთ ეს მნიშვნელობები, რომელიც გამოჩნდება გვერდზე -->
+    
+    <form>
+        
+        <input type="email" name="email"  placeholder="Enter your email" required>
+        <input type="password" name="npass"  placeholder="Enter your password" required>
+        <input type="text" name="name"  placeholder="Enter your name" required>
+        <input type="text" name="lastname"  placeholder="Enter your last name" required>
+        <input type="text" name="age"  placeholder="Enter your age" required>
+        <button>Regist</button> 
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>Email</th>
+            <th>password</th>
+            <th>name</th>
+            <th>lastname</th>
+            <th>age</th>
+        </tr>
+
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+  
+.div1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #0097fc;
+    top: 0;
+    left: 0;
+    animation: moveAround 8s linear infinite;
+}
+  
+
+@keyframes moveAround {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    25% {
+      top: 0;
+      left: calc(100% - 50px); 
+    }
+    50% {
+      top: calc(100% - 50px);
+      left: calc(100% - 50px);
+    }
+    75% {
+      top: calc(100% - 50px); 
+      left: 0;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
