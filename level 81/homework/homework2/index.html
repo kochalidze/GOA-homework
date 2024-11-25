@@ -1,0 +1,72 @@
+<!-- Slide In ანიმაცია - შექმენით ბლოკი, რომელიც ღილაკზე დაჭერისას გვერდიდან ნელა გამოვა. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide In Animation</title>
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden; /* Prevent scrollbars during animation */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #805ad5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #6b46c1;
+}
+
+.slide {
+  position: absolute;
+  top: 50%;
+  left: -300px; /* Start off-screen */
+  transform: translateY(-50%);
+  width: 250px;
+  padding: 20px;
+  background-color: #ffcc00;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: left 0.5s ease; /* Smooth sliding animation */
+}
+
+.slide.visible {
+  left: 20px; /* Slide into view */
+}
+
+  </style>
+</head>
+<body>
+  <button id="slideButton">Click to Slide In</button>
+  <div id="slideElement" class="slide">This is a sliding element</div>
+
+  <script>
+    // Select the button and the sliding element
+const slideButton = document.getElementById('slideButton');
+const slideElement = document.getElementById('slideElement');
+
+// Add event listener to toggle slide-in effect
+slideButton.addEventListener('click', () => {
+  // Toggle the 'visible' class to slide in or out
+  slideElement.classList.toggle('visible');
+});
+
+  </script>
+</body>
+</html>

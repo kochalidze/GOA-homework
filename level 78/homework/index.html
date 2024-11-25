@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Design</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7c947;
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #fdd835;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 3px 8px;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-image">
+      <img src="https://via.placeholder.com/400x200" alt="HTML & CSS">
+    </div>
+    <div class="card-content">
+      <span class="tag">Learning</span>
+      <p class="date">Published: 21 Dec 2023</p>
+      <h2 class="title">HTML & CSS foundations</h2>
+      <p class="description">
+        These languages are the backbone of every website, offering structure, content, and presentation.
+      </p>
+      <div class="author">
+        <img src="https://via.placeholder.com/50" alt="Author">
+        <p>Greg Hopper</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

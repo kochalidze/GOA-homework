@@ -1,0 +1,88 @@
+<!-- როტაცია - დააგეგმეთ ანიმაცია, რომელიც ელემენტს ნელა ატრიალებს ღილაკზე დაჭერისას.
+
+ყველაფერი ჯავასკრიპტის ანიმაციებით. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotation Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #805ad5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    button:hover {
+      background-color: #6b46c1;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #ff5733;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button id="rotateButton">Rotate</button>
+  <div class="box" id="box">Box</div>
+
+  <script>
+    // Select the button and the box element
+const rotateButton = document.getElementById('rotateButton');
+const box = document.getElementById('box');
+
+// Variables to manage rotation
+let rotationAngle = 0;
+let animationFrame;
+
+// Function to perform the rotation
+function rotateElement() {
+  const targetAngle = rotationAngle + 360; // Add 360 degrees
+
+  // Smooth rotation logic using requestAnimationFrame
+  function animate() {
+    if (rotationAngle < targetAngle) {
+      rotationAngle += 2; // Increment angle for smooth rotation
+      box.style.transform = `rotate(${rotationAngle}deg)`;
+      animationFrame = requestAnimationFrame(animate); // Continue animation
+    } else {
+      cancelAnimationFrame(animationFrame); // Stop animation when complete
+    }
+  }
+
+  animate();
+}
+
+// Add event listener to the button
+rotateButton.addEventListener('click', rotateElement);
+
+  </script>
+</body>
+</html>

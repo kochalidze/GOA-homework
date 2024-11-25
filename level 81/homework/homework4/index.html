@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Size Animation</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #805ad5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #6b46c1;
+}
+
+.text {
+  font-size: 20px;
+  transition: font-size 0.5s ease;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <button id="animateButton">Click to Animate Text</button>
+  <div id="textElement" class="text">This text will grow and shrink</div>
+
+  <script>
+    // Select the button and the text element
+const animateButton = document.getElementById('animateButton');
+const textElement = document.getElementById('textElement');
+
+// Add event listener to the button
+animateButton.addEventListener('click', () => {
+  // Add a temporary class to animate the text size
+  textElement.style.fontSize = "40px"; // Increase text size
+  setTimeout(() => {
+    textElement.style.fontSize = "20px"; // Return to original size
+  }, 500); // Match the CSS transition duration
+});
+
+  </script>
+</body>
+</html>

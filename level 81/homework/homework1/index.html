@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fade In / Fade Out Animation</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #805ad5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #6b46c1;
+}
+
+#fadeElement {
+  padding: 20px;
+  background-color: #fbbf24;
+  color: #000;
+  border-radius: 10px;
+  font-size: 18px;
+  opacity: 0; /* ელემენტი უჩინარია */
+  transition: opacity 1s ease-in-out; /* Smooth გადასვლა */
+}
+
+.fade-in {
+  opacity: 1; /* გამოჩნდება */
+}
+
+.fade-out {
+  opacity: 0; /* გაქრება */
+}
+
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <button id="toggleButton">Toggle Fade</button>
+    <div id="fadeElement" class="fade-out">Hello, I appear and disappear!</div>
+  </div>
+
+  <script>
+    // ელემენტის პოვნა
+const fadeElement = document.getElementById('fadeElement');
+const toggleButton = document.getElementById('toggleButton');
+
+// ღილაკზე დაჭერის ფუნქცია
+toggleButton.addEventListener('click', () => {
+  // Fade In თუ Fade Out კლასის გადართვა
+  if (fadeElement.classList.contains('fade-out')) {
+    fadeElement.classList.remove('fade-out');
+    fadeElement.classList.add('fade-in');
+  } else {
+    fadeElement.classList.remove('fade-in');
+    fadeElement.classList.add('fade-out');
+  }
+});
+
+  </script>
+</body>
+</html>

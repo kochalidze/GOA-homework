@@ -4,8 +4,8 @@
 
 function calculateTip() {
 
-    const billAmount = parseFloat(document.getElementById('num1').value);
-    const tipPercent = parseFloat(document.getElementById('num2').value);
+    const billAmount = parseFloat(document.getElementById('billAmount').value);
+    const tipPercent = parseFloat(document.getElementById('tipPercent').value);
     
 
     if (isNaN(billAmount) || isNaN(tipPercent)) {
@@ -16,6 +16,6 @@ function calculateTip() {
     const tipAmount = (billAmount * tipPercent) / 100;
     const totalAmount = billAmount + tipAmount;
     
-    document.getElementById('result').innerText = `Total: $${totalAmount.toFixed(2)} | Tip: ${tipAmount.toFixed(2)}`;
+    document.getElementById('result').innerText = `Tip: $${tipAmount.toFixed(2)} | Total: $${totalAmount.toFixed(2)}`;
 }
 calculateTip()
