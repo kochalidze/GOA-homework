@@ -1,0 +1,31 @@
+<!--შეცვალეთ ტექსტის შიგთავსი JavaScript-ის გამოყენებით და console.log-ში გამოიტანეთ-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Change Example</title>
+</head>
+<body>
+  <!-- Text element -->
+  <p id="text">This is some text that will change!</p>
+  
+  <!-- Button to change text and log it -->
+  <button id="changeTextButton">Change Text</button>
+
+  <script>
+    // Get elements
+    const textElement = document.getElementById('text');
+    const changeTextButton = document.getElementById('changeTextButton');
+    
+    // Add event listener to the button
+    changeTextButton.addEventListener('click', function() {
+      // Change text content
+      textElement.textContent = "The text has been changed!";
+      
+      // Log to console
+      console.log(textElement.textContent);
+    });
+  </script>
+</body>
+</html>
