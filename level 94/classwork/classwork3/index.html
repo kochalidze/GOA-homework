@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .card {
+      background-color: lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">A</div>
+    <div class="card">B</div>
+    <div class="card">C</div>
+    <div class="card">D</div>
+    <div class="card">E</div>
+    <div class="card">F</div>
+    <div class="card">G</div>
+    <div class="card">H</div>
+    <div class="card">I</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ქუქი-კლიკერი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f3f4f6;
+        }
+        #cookie {
+            width: 150px;
+            height: 150px;
+            background-image: url('cookie.png');
+            background-size: cover;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .button:disabled {
+            background-color: #d3d3d3;
+        }
+        .stats {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ქუქი-კლიკერი</h1>
+
+<div id="cookie"></div>
+
+<div class="stats">
+    <p>ქულები: <span id="cookies">0</span></p>
+    <p>ოქრო: <span id="gold">0</span></p>
+</div>
+
+<div>
+    <button id="bigFinger" class="button" disabled>გარდა დიდი თითი (50 ოქრო)</button>
+    <button id="betterMines" class="button" disabled>საუკეთესო მაღაროები (100 ქულა)</button>
+    <button id="doubleCookies" class="button" disabled>ორმაგი ქულები (200 ოქრო)</button>
+</div>
+
+<script>
+    let cookies = 0;
+    let gold = 0;
+    let bigFingerLevel = 0;
+    let betterMinesLevel = 0;
+    let doubleCookiesLevel = 0;
+
+    const cookiesElem = document.getElementById('cookies');
+    const goldElem = document.getElementById('gold');
+    const bigFingerBtn = document.getElementById('bigFinger');
+    const betterMinesBtn = document.getElementById('betterMines');
+    const doubleCookiesBtn = document.getElementById('doubleCookies');
+    const cookieElem = document.getElementById('cookie');
+
+    cookieElem.addEventListener('click', () => {
+        cookies += 1 + bigFingerLevel;
+        gold += 1 + betterMinesLevel;
+        updateStats();
+    });
+
+    bigFingerBtn.addEventListener('click', () => {
+        if (gold >= 50 * (2 ** bigFingerLevel)) {
+            gold -= 50 * (2 ** bigFingerLevel);
+            bigFingerLevel += 1;
+            bigFingerBtn.innerText = `გარდა დიდი თითი (${50 * (2 ** bigFingerLevel)} ოქრო)`;
+            updateStats();
+        }
+    });
+
+    betterMinesBtn.addEventListener('click', () => {
+        if (cookies >= 100 * (2 ** betterMinesLevel)) {
+            cookies -= 100 * (2 ** betterMinesLevel);
+            betterMinesLevel += 1;
+            betterMinesBtn.innerText = `საუკეთესო მაღაროები (${100 * (2 ** betterMinesLevel)} ქულა)`;
+            updateStats();
+        }
+    });
+
+    doubleCookiesBtn.addEventListener('click', () => {
+        if (gold >= 200 * (2 ** doubleCookiesLevel)) {
+            gold -= 200 * (2 ** doubleCookiesLevel);
+            doubleCookiesLevel += 1;
+            doubleCookiesBtn.innerText = `ორმაგი ქულები (${200 * (2 ** doubleCookiesLevel)} ოქრო)`;
+            updateStats();
+        }
+    });
+
+    function updateStats() {
+        cookiesElem.innerText = cookies;
+        goldElem.innerText = gold;
+
+        bigFingerBtn.disabled = gold < 50 * (2 ** bigFingerLevel);
+        betterMinesBtn.disabled = cookies < 100 * (2 ** betterMinesLevel);
+        doubleCookiesBtn.disabled = gold < 200 * (2 ** doubleCookiesLevel);
+    }
+
+    updateStats();
+</script>
+
+</body>
+</html>
+

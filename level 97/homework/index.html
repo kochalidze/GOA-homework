@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ელ. ფოსტების ფილტრაცია</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .input-section, .output-section {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ელ. ფოსტების ფილტრაცია</h1>
+  <div class="container">
+    <div class="input-section">
+      <h3>ფილტრი თემით</h3>
+      <select id="subjectFilter">
+        <option value="">აირჩიეთ თემა</option>
+        <option value="მოგზაურობა">მოგზაურობა</option>
+        <option value="მოხსენება">მოხსენება</option>
+        <option value="გაცნობიერება">გაცნობიერება</option>
+      </select>
+      <button id="filterButton">ფილტრაცია</button>
+    </div>
+    <div class="output-section">
+      <h3>ფილტრის შედეგები</h3>
+      <ul id="emailList"></ul>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

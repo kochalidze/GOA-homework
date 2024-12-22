@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: antiquewhite;
+        }
+        .parent {
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .div1 {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 100px;
+        }
+        .child {
+            display: flex;
+            gap: 10px;
+        }
+        .childDiv1 {
+            width: 350px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+        .childDiv2 {
+            background-color: rgb(255, 255, 255);
+            width: 200px;
+        
+        }
+        .child1 {
+            display: flex;
+            gap: 10px;
+        }
+        .child1Div {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .child1Div1 {
+            width: 350px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        @media (max-width: 560px) {
+            .child {
+                display: flex;
+                flex-direction: column;
+            }
+            .childDiv2 {
+            width: 500px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            }
+            .childDiv1 {
+            width: 500px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            }
+            .child1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            }
+        .child1Div {
+            width: 500px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .child1Div1 {
+            width: 500px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            
+        }
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="div1">A</div>
+        <div class="child">
+            <div class="childDiv1">B</div>
+            <div class="childDiv2">E</div>
+        </div>
+        <div class="child1">
+            <div class="child1Div">C</div>
+            <div class="child1Div1">D</div>
+        </div>
+    </div>
+    
+</body>
+</html>

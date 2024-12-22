@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="password-container">
+        <h2>Password Strength Checker</h2>
+        <input type="password" id="password" placeholder="Enter your password" oninput="checkPasswordStrength()">
+        <div id="strengthIndicator" class="strength-indicator">
+            Enter a password to see the strength
+        </div>
+    </div>
+
+    <script>
+        function checkPasswordStrength() {
+            const password = document.getElementById('password').value;
+            const strengthIndicator = document.getElementById('strengthIndicator');
+
+            let strength = 'low';
+            let message = 'Weak password';
+            let regexLow = /.{6,}/;
+            let regexMedium = /^(?=.*[A-Z]|.*\d).{8,}$/;
+            let regexStrong = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{10,}$/;
+
+            if (regexStrong.test(password)) {
+                strength = 'strong';
+                message = 'Strong password';
+            } else if (regexMedium.test(password)) {
+                strength = 'medium';
+                message = 'Medium strength password';
+            } else if (regexLow.test(password)) {
+                strength = 'low';
+                message = 'Weak password';
+            } else {
+                message = 'Password is too short';
+            }
+
+
+            strengthIndicator.textContent = message;
+            strengthIndicator.className = `strength-indicator ${strength}`;
+        }
+    </script>
+</body>
+</html>

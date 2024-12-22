@@ -1,0 +1,16 @@
+/* 2) შექმენით საიტი სადაც body-ს აქვს ანიმაცია რომელიც მას ფერებს უცვლის */
+/* 3) შექმენით იგივე ანიმაცი ოღონდ ღილაკზე ჰოვერის დროს  */
+
+body {
+  margin: 0;
+  height: 100vh;
+  animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+  0% { background-color: red; }
+  25% { background-color: yellow; }
+  50% { background-color: green; }
+  75% { background-color: blue; }
+  100% { background-color: red; }
+}

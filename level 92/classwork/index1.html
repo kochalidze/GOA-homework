@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3) შექმენით ინფუთი და გვერძე ელემენტი სადაც ტექსტს ჩაწერთ, 
+    თუ ინფუთში მომხმარებელი შეიყვანს ასოს გარდა სხვა რამეს წითლად გამოიტანეთ ერორის მესიჯს -->
+
+    <input type="text" id="input" placeholder="Enter text:">
+    <p id="paragrap"></p>
+
+    <script>
+        document.getElementById('input').addEventListener('input', function() {
+            let input = this.value;
+            let paragrap = document.getElementById('paragrap');
+            
+            if (/^[a-zA-Z]*$/.test(input)) {
+                paragrap.textContent = "Valid input";
+                paragrap.className = "valid";
+            } else {
+                paragrap.textContent = "Error: Only letters allowed";
+                paragrap.className = "error";
+            }
+        });
+    </script>
+</body>
+</html>

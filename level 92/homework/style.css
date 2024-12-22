@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}
+.password-container {
+    max-width: 400px;
+    margin: auto;
+}
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.strength-indicator {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+.low {
+    background-color: red;
+}
+.medium {
+    background-color: yellow;
+    color: black;
+}
+.strong {
+    background-color: green;
+}

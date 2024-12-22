@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Programs</title>
+  <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .counter {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 15px;
+      display: inline-block;
+      width: 200px;
+      text-align: center;
+    }
+    .disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="createCounter">Create Counter</button>
+  <div id="counterContainer"></div>
+
+  <script>
+    let counterId = 0;
+
+    document.getElementById('createCounter').addEventListener('click', () => {
+      if (counterId < 3) createCounter();
+    });
+
+    function createCounter() {
+      counterId++;
+
+      const counterDiv = document.createElement('div');
+      counterDiv.classList.add('counter');
+      counterDiv.id = `counter-${counterId}`;
+
+      const counterDisplay = document.createElement('p');
+      counterDisplay.textContent = 0;
+      counterDisplay.className = 'display';
+
+      const incrementBtn = document.createElement('button');
+      incrementBtn.textContent = 'Increment';
+      incrementBtn.addEventListener('click', () => {
+        if (!isLocked()) {
+          saveState();
+          counterDisplay.textContent = +counterDisplay.textContent + 1;
+        }
+      });
+
+      const decrementBtn = document.createElement('button');
+      decrementBtn.textContent = 'Decrement';
+      decrementBtn.addEventListener('click', () => {
+        if (!isLocked()) {
+          saveState();
+          counterDisplay.textContent = +counterDisplay.textContent - 1;
+        }
+      });
+
+      const lockCheckbox = document.createElement('input');
+      lockCheckbox.type = 'checkbox';
+      lockCheckbox.id = `lock-${counterId}`;
+
+      const lockLabel = document.createElement('label');
+      lockLabel.textContent = 'Lock';
+      lockLabel.htmlFor = `lock-${counterId}`;
+
+      const undoBtn = document.createElement('button');
+      undoBtn.textContent = 'Undo';
+      undoBtn.addEventListener('click', () => {
+        if (!isLocked() && history.length > 0) {
+          counterDisplay.textContent = history.pop();
+        }
+      });
+
+      const redoBtn = document.createElement('button');
+      redoBtn.textContent = 'Redo';
+      redoBtn.addEventListener('click', () => {
+        if (!isLocked() && redoStack.length > 0) {
+          const redoValue = redoStack.pop();
+          saveState();
+          counterDisplay.textContent = redoValue;
+        }
+      });
+
+      let history = [];
+      let redoStack = [];
+
+      function saveState() {
+        redoStack = [];
+        history.push(counterDisplay.textContent);
+        if (history.length > 1) history.shift();
+      }
+
+      function isLocked() {
+        return lockCheckbox.checked;
+      }
+
+      counterDiv.appendChild(counterDisplay);
+      counterDiv.appendChild(incrementBtn);
+      counterDiv.appendChild(decrementBtn);
+      counterDiv.appendChild(document.createElement('br'));
+      counterDiv.appendChild(lockCheckbox);
+      counterDiv.appendChild(lockLabel);
+      counterDiv.appendChild(document.createElement('br'));
+      counterDiv.appendChild(undoBtn);
+      counterDiv.appendChild(redoBtn);
+      document.getElementById('counterContainer').appendChild(counterDiv);
+    }
+  </script>
+</body>
+</html>
+
